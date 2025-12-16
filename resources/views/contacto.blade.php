@@ -1,31 +1,27 @@
 @extends('layouts.app')
 
-@section('title', 'Contacto')
+@section('content')
+<div class="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/5 p-10 shadow-2xl">
+    <h1 class="text-4xl font-bold">Contacto</h1>
+    <p class="mt-4 text-white/80">Formulario visual (todavía no envía).</p>
 
-@section('contenido')
-<div class="bg-black/35 backdrop-blur-sm border border-white/10 rounded-3xl p-10">
-    <h2 class="text-4xl font-bold mb-3">Contacto</h2>
-    <p class="text-gray-200 mb-6">Formulario visual (todavía no envía).</p>
-
-    <form class="space-y-4 max-w-xl">
+    <form class="mt-8 space-y-5">
         <div>
-            <label class="block text-sm font-medium text-gray-200">Nombre</label>
-            <input type="text" class="mt-1 w-full rounded-xl p-3 bg-black/30 border border-white/10 text-white" placeholder="Tu nombre">
+            <label class="block text-sm font-semibold">Nombre</label>
+            <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder-white/40 outline-none" placeholder="Tu nombre">
         </div>
 
         <div>
-            <label class="block text-sm font-medium text-gray-200">Correo</label>
-            <input type="email" class="mt-1 w-full rounded-xl p-3 bg-black/30 border border-white/10 text-white" placeholder="tu@correo.com">
+            <label class="block text-sm font-semibold">Correo</label>
+            <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder-white/40 outline-none" placeholder="tu@correo.com">
         </div>
 
         <div>
-            <label class="block text-sm font-medium text-gray-200">Mensaje</label>
-            <textarea rows="4" class="mt-1 w-full rounded-xl p-3 bg-black/30 border border-white/10 text-white" placeholder="Escribe aquí..."></textarea>
+            <label class="block text-sm font-semibold">Mensaje</label>
+            <textarea class="mt-2 h-32 w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder-white/40 outline-none" placeholder="Escribe aquí..."></textarea>
         </div>
 
-        <button type="button" class="rounded-xl px-5 py-3 font-semibold bg-white text-black hover:opacity-90">
-            Enviar
-        </button>
+        <button type="button" class="rounded-xl bg-white px-6 py-3 font-semibold text-black">Enviar</button>
     </form>
 </div>
 @endsection
